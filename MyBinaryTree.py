@@ -18,7 +18,7 @@ def find_path(root, path, k):
         return True
 
     # Check if k is found in left or right sub-tree
-    if ((root.left != None and find_path(root.left, path, k)) or (root.right != None and find_path(root.right, path, k))):
+    if (root.left != None and find_path(root.left, path, k)) or (root.right != None and find_path(root.right, path, k)):
         return True
 
     # If not present in subtree rooted with root, remove root from path and return False
